@@ -1,6 +1,8 @@
 # ServerJsonLocal
 
-ServerJsonLocal is a simple, yet powerful Flask-based server designed to generate local JSON responses. With the help of Docker, it ensures consistent and reproducible environment for your server across multiple systems. This project showcases an example of running a local server on Docker, serving a JSON response that can be consumed by a browser or a browser extension.
+The server is set to run on the local host with a simple endpoint '/' (http://127.0.0.1:5000/) that returns a predefined JSON response. This makes it ideal for testing and development purposes, especially for client applications that rely on JSON based APIs.
+
+The repository includes a Dockerfile for easy setup and deployment. All dependencies are outlined in the requirements.txt file and will be installed during the Docker image build process, ensuring a clean, isolated environment for your server.
 
 ![Screenshot_6](https://github.com/mykytashch/ServerJsonLocal/assets/129088502/c9e61bbb-ed7d-4728-b6d3-f534ecdff0da)
 
@@ -20,12 +22,6 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 ```
-
-
-
-The server is set to run on the local host with a simple endpoint '/' (http://127.0.0.1:5000/) that returns a predefined JSON response. This makes it ideal for testing and development purposes, especially for client applications that rely on JSON based APIs.
-
-The repository includes a Dockerfile for easy setup and deployment. All dependencies are outlined in the requirements.txt file and will be installed during the Docker image build process, ensuring a clean, isolated environment for your server.
 
 To build and run the Docker container, follow these steps:
 
