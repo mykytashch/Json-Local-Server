@@ -24,7 +24,8 @@ Feel free to clone, fork, or use this repository as a baseline for your own Flas
 ![Screenshot_6](https://github.com/mykytashch/ServerJsonLocal/assets/129088502/c9e61bbb-ed7d-4728-b6d3-f534ecdff0da)
 
 
-
+```python
+```python
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -39,4 +40,7 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
+```
+```
+
 
