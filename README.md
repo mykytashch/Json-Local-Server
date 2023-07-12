@@ -1,5 +1,24 @@
 # ServerJsonLocal
 
+```python
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    data = {
+        'name': 'Test',
+        'message': 'This is a test JSON'
+    }
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
+```
+
+![Screenshot_6](https://github.com/mykytashch/ServerJsonLocal/assets/129088502/c9e61bbb-ed7d-4728-b6d3-f534ecdff0da)
+
 ServerJsonLocal is a simple, yet powerful Flask-based server designed to generate local JSON responses. With the help of Docker, it ensures consistent and reproducible environment for your server across multiple systems. This project showcases an example of running a local server on Docker, serving a JSON response that can be consumed by a browser or a browser extension.
 
 The server is set to run on the local host with a simple endpoint '/' (http://127.0.0.1:5000/) that returns a predefined JSON response. This makes it ideal for testing and development purposes, especially for client applications that rely on JSON based APIs.
@@ -21,25 +40,9 @@ The server should now be accessible at http://127.0.0.1:5000/ from your local ma
 Feel free to clone, fork, or use this repository as a baseline for your own Flask server projects. Contributions and improvements are always welcome!"
 
 
-![Screenshot_6](https://github.com/mykytashch/ServerJsonLocal/assets/129088502/c9e61bbb-ed7d-4728-b6d3-f534ecdff0da)
 
 
-```python
-```python
-from flask import Flask, jsonify
 
-app = Flask(__name__)
 
-@app.route('/')
-def index():
-    data = {
-        'name': 'Test',
-        'message': 'This is a test JSON'
-    }
-    return jsonify(data)
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
-```
 
 
