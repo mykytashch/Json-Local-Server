@@ -39,14 +39,6 @@ if __name__ == '__main__':
 
 To move the JSON data to a separate file `data.json`, you can create a JSON file and read its contents in your Flask server code. Here's an example:
 
-```json
-{
-  "name": "Test",
-  "message": "This is a test JSON"
-}
-```
-
-
 ```python
 from flask import Flask, jsonify
 import json
@@ -61,6 +53,14 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
+```
+
+`data.json`
+```json
+{
+  "name": "Test",
+  "message": "This is a test JSON"
+}
 ```
 
 
