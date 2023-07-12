@@ -43,6 +43,7 @@ if __name__ == '__main__':
 
 To move JSON data to a separate `data.json` file, you can create a JSON file and read its contents into the Flask server code. Here is an example:
 
+(13 lines, 272 characters):
 
 ```python
 from flask import Flask, jsonify
