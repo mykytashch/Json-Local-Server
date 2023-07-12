@@ -35,7 +35,7 @@ To build and run the Docker container, follow these steps:
 
 The server should now be accessible at http://127.0.0.1:5000/ from your local machine.
 
-Feel free to clone, fork, or use this repository as a baseline for your own Flask server projects. Contributions and improvements are always welcome!"
+Feel free to clone, fork, or use this repository as a baseline for your own Flask server projects. Contributions and improvements are always welcome!
 
 
 
