@@ -35,4 +35,37 @@ if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 ```
 
+
+
+To move the JSON data to a separate file `data.json`, you can create a JSON file and read its contents in your Flask server code. Here's an example:
+
+```json
+{
+  "name": "Test",
+  "message": "This is a test JSON"
+}
+```
+
+
+```python
+from flask import Flask, jsonify
+import json
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    with open('data.json', 'r') as json_file:
+        data = json.load(json_file)
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
+```
+
+
 Feel free to clone, fork, or use this repository as a baseline for your own Flask server projects. Contributions and improvements are always welcome!
+
+
+
+
