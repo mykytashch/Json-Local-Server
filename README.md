@@ -18,7 +18,7 @@ To build and run the Docker container, follow these steps:
 
 Here is the compact Python code for the server (14 lines, 275 characters):
 
-`app.py`
+
 ```python
 from flask import Flask, jsonify
 
@@ -35,7 +35,7 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 ```
-
+`app.py`
 
 
 
@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
 To move JSON data to a separate `data.json` file, you can create a JSON file and read its contents into the Flask server code. Here is an example:
 
-`app.py`
+
 ```python
 from flask import Flask, jsonify
 import json
@@ -59,15 +59,15 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 ```
+`app.py`
 
-`data.json`
 ```json
 {
   "name": "Test",
   "message": "This is a test JSON"
 }
 ```
-
+`data.json`
 
 Feel free to clone, fork, or use this repository as a baseline for your own Flask server projects. Contributions and improvements are always welcome!
 
