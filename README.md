@@ -1,4 +1,4 @@
-# ServerJsonLocal
+# Json Local Server
 
 The server is a minimal implementation written in just 14 lines and 275 characters. It runs on the local host with a simple endpoint '/' (http://127.0.0.1:5000/) that returns a predefined JSON response. This compact server is designed for testing and development purposes, particularly for client applications that rely on JSON-based APIs.
 
