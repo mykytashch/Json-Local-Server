@@ -73,5 +73,8 @@ if __name__ == '__main__':
 Feel free to clone, fork, or use this repository as a baseline for your own Flask server projects. Contributions and improvements are always welcome!
 
 
+## Author
+
+Json Local Server is developed by Mykyta Shcheholevatyi
 
 
